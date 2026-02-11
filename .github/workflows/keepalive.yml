@@ -1,9 +1,9 @@
 name: Keep Alive
 
 on:
-  # 定时任务：每月 1 号和 31 号运行
+  # 定时任务：每月 15 号和 29 号运行
   schedule:
-    - cron: '0 0 1,31 * *'
+    - cron: '0 0 15,29 * *'
   
   # 支持手动触发
   workflow_dispatch:

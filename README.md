@@ -113,14 +113,14 @@
 ## 定时任务配置
 
 GitHub Actions 默认配置：
-- 每月 1 号和 31 号自动运行
+- 每月 15 号和 29 号自动运行
 - 支持手动触发
 
 修改定时任务：编辑 `.github/workflows/keepalive.yml` 中的 `cron` 表达式
 
 ```yaml
 schedule:
-  - cron: '0 0 1,31 * *'  # 每月 1 号和 31 号
+  - cron: '0 0 15,29 * *'  # 每月 15 号和 29 号
 ```
 
 常用 cron 表达式：
